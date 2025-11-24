@@ -17,6 +17,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
 }
 
 .profilePic > img {
