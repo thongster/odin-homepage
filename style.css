@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header {
@@ -11,6 +13,12 @@ header {
 
 }
 
+.profilePic {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 .profilePic > img {
     max-width: 20rem;
     min-height: 20rem;
@@ -18,11 +26,12 @@ header {
     display: block;
 }
 
-header h1 {
-    bottom: 0;
+.profilePic > h1 {
     position: fixed;
     color: white;
     margin: 0;
+    padding: 1rem;
+    font-size: 3rem;
 }
 
 .aboutMe {
@@ -30,7 +39,8 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     background-color: #ffffff;
-    padding: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
 }
 
 .buttons {
