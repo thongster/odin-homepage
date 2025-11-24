@@ -18,6 +18,13 @@ header img {
     display: block;
 }
 
+header h1 {
+    bottom: 0;
+    position: fixed;
+    color: white;
+    margin: 0;
+}
+
 .aboutMe {
     display: flex;
     flex-direction: column;
