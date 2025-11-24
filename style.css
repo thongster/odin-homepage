@@ -7,17 +7,16 @@ body {
 
 header {
     display: flex;
-      background: linear-gradient(170deg, rgb(27, 147, 226) 50%, rgb(255, 255, 255) 50%);
+      background: linear-gradient(170deg, rgb(21, 129, 172) 66%, rgb(255, 255, 255) 66%);
       align-items: center;
       padding: 3rem;
-
 }
 
 .profilePic {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.4);
 }
 
 .profilePic > img {
@@ -42,6 +41,14 @@ header {
     background-color: #ffffff;
     padding: 1.5rem;
     box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.5);
+}
+
+.aboutMe > h2 {
+    margin: 0.5rem 0;
+}
+
+.aboutMe > p {
+    margin: 1rem 0 2rem 0;
 }
 
 .buttons {
