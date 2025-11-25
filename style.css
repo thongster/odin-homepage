@@ -89,6 +89,10 @@ header {
     margin: 0rem 3rem;
 }
 
+.myWork > h2 {
+    margin: 1rem 0;
+}
+
 .cardSection {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
