@@ -108,6 +108,15 @@ header {
     display: block;
 }
 
+.cardBottom {
+    padding: 1rem;
+}
+
+.cardHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media (min-width: 601px) and (max-width: 1000px) {
     header {
