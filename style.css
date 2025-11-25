@@ -12,6 +12,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-weight: 500;
+    margin: 0;
 }
 
 header {
@@ -91,13 +92,20 @@ header {
 .cardSection {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
     gap: 1rem;
 }
 
 .card {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
     box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
+}
+
+.card > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
 
