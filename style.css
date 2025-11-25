@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     max-width: 1000px;
     margin: 0 auto;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
 }
 
 header {
@@ -20,8 +29,8 @@ header {
 }
 
 .profilePic > img {
-    max-width: 24rem;
-    min-height: 24rem;
+    max-width: 26rem;
+    min-height: 26rem;
     object-fit: cover;
     display: block;
 }
@@ -32,6 +41,7 @@ header {
     margin: 0;
     padding: 1rem;
     font-size: 3rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .aboutMe {
@@ -99,8 +109,9 @@ header {
     }
 
     .profilePic > h1 {
+        right: 0;
         color: white;
-        margin: 0;
+        margin: 0 2rem 0 0;
         padding: 1rem;
         font-size: 3rem;
     }
@@ -109,7 +120,7 @@ header {
         display: block;
         position: relative;
         z-index: 1;
-
+        margin-top: 3rem;
     }
 
     .aboutMe > h2 {
@@ -120,5 +131,12 @@ header {
         margin: 0 0 2rem 0;
     }
 
+    .buttons {
+        display: none;
+    }
 
+}
+
+@media (max-width: 600px) {
+    
 }
