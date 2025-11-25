@@ -16,12 +16,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
 }
 
 .profilePic > img {
-    max-width: 20rem;
-    min-height: 20rem;
+    max-width: 24rem;
+    min-height: 24rem;
     object-fit: cover;
     display: block;
 }
@@ -44,11 +44,11 @@ header {
 }
 
 .aboutMe > h2 {
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 .aboutMe > p {
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0 2rem 0;
 }
 
 .buttons {
@@ -70,4 +70,45 @@ header {
     height: 2rem;
     width: 2rem;
     object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+    header {
+        display: block;
+    }
+
+    .profilePic {
+        display: block;
+        position: relative;
+        margin: 0 1rem 1rem 0;
+        transform: translate(-1rem, -1rem);
+        box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
+        float: left;
+        z-index: 2;
+    }
+
+    .profilePic > img {
+        max-width: 18rem;
+        min-height: 18rem;
+        object-fit: cover;
+        display: block;
+    }
+
+    .profilePic > h1 {
+        color: white;
+        margin: 0;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+
+    .aboutMe {
+        display: block;
+        margin-top: 5rem;
+        position: relative;
+        z-index: 1;
+
+    }
+
+
 }
