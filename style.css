@@ -26,6 +26,7 @@ header {
     flex-direction: column;
     justify-content: end;
     box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .profilePic > img {
@@ -36,7 +37,8 @@ header {
 }
 
 .profilePic > h1 {
-    position: fixed;
+    position: absolute;
+    bottom: 0;
     color: white;
     margin: 0;
     padding: 1rem;
@@ -82,8 +84,25 @@ header {
     object-fit: contain;
 }
 
+.myWork {
 
-@media (min-width: 601px) and (max-width: 900px) {
+}
+
+.cardSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
+}
+
+
+@media (min-width: 601px) and (max-width: 1000px) {
     header {
         display: block;
         padding: 4rem;
@@ -91,16 +110,16 @@ header {
 
     .profilePic {
         display: block;
-        position: relative;
-        top: -1.5rem;
-        left: -1.5rem;
-        box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
+        position: static;
         float: left;
         z-index: 2;
         margin: -0.5rem;
+        box-shadow: none;
     }
 
     .profilePic > img {
+        transform: translate(-1.5rem, -1.5rem);
+        box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.25);
         max-width: 20rem;
         min-height: 20rem;
         object-fit: cover;
@@ -109,16 +128,19 @@ header {
     }
 
     .profilePic > h1 {
+        position: absolute;
+        top: 2rem;
         right: 0;
         color: white;
         margin: 0 2rem 0 0;
-        padding: 1rem;
+        padding: 0rem;
         font-size: 3rem;
+        z-index: 999;
     }
 
     .aboutMe {
         display: block;
-        position: relative;
+        position: static;
         z-index: 1;
         margin-top: 3rem;
     }
