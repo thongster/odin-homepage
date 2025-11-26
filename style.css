@@ -86,11 +86,11 @@ header {
 }
 
 .myWork {
-    margin: 0rem 3rem;
+    margin: 0 3rem 3rem 3rem;
 }
 
 .myWork > h2 {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .cardSection {
@@ -139,6 +139,18 @@ footer {
     padding: 3rem;
     background-color: rgb(21, 129, 172);
     color: white;
+    gap: 3rem;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > picture > img {
+    width: 100%;
+    display: block;
+    justify-self: end;
 }
 
 @media (min-width: 601px) and (max-width: 1000px) {
