@@ -257,6 +257,7 @@ footer > picture > img {
         padding: 0;
         box-shadow: none;
         margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .aboutMe > h2 {
@@ -283,7 +284,7 @@ footer > picture > img {
     }
 
     .myWork {
-        margin: 0rem 2rem 3rem 2rem;
+        margin: 0rem 2rem 6rem 2rem;
     }
 
     .cardSection {
@@ -299,13 +300,21 @@ footer > picture > img {
         padding: 2rem;
     }
 
+    .footerText {
+        margin-bottom: 4rem;
+    }
+
     .footerText > h2 {
-            align-items: center;
-            text-align: center;
-            font-size: 2rem;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
     }
 
     .footerText > .buttons {
         justify-content: center;
+    }
+
+    footer > picture {
+        margin: -2rem;
     }
 }
