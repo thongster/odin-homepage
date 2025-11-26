@@ -132,6 +132,14 @@ header {
     width: 1.75rem;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color:  rgb(21, 129, 172);
+}
+
 @media (min-width: 601px) and (max-width: 1000px) {
     header {
         display: block;
