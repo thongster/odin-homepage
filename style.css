@@ -147,6 +147,10 @@ footer {
     flex-direction: column;
 }
 
+footer > picture {
+    flex: 1 1 80%;
+}
+
 footer > picture > img {
     width: 100%;
     display: block;
@@ -210,6 +214,10 @@ footer > picture > img {
 
     .card > img {
         height: 250px;
+    }
+
+    .footerText {
+        justify-content: center;
     }
 }
 
@@ -275,7 +283,7 @@ footer > picture > img {
     }
 
     .myWork {
-        margin: 0rem 2rem;
+        margin: 0rem 2rem 3rem 2rem;
     }
 
     .cardSection {
@@ -284,5 +292,20 @@ footer > picture > img {
 
     .card > img {
         height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .footerText > h2 {
+            align-items: center;
+            text-align: center;
+            font-size: 2rem;
+    }
+
+    .footerText > .buttons {
+        justify-content: center;
     }
 }
